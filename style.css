@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    width: 390px;
+    height: 590px;
+    
+    margin: auto;
+    background: url(bg.jpg);
+    background-size: contain;
+    overflow: hidden;
+}
+
+#car{
+    width: 149px;
+    height: 117px;
+    
+    top: 0;
+    left: 0;
+    position: relative;
+    animation: move 1s linear infinite;
+    text-align: center;
+}
+
+#car img{
+    height: 100px;
+    
+}
+
+#rcar img{
+    height: 100px;
+    
+}
+
+@keyframes move{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 500px;
+    }
+}
+
+#rcar{
+    width: 149px;
+    height: 117px;
+    
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: burlywood;
+    margin: 1rem auto;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
+#score{
+    font-size: 2rem;
+    color: brown;
+}
+
+#btn{
+    padding: 4px 3px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: blue;
+    font-size: 15px;
+    margin-top: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
